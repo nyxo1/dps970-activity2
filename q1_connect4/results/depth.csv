@@ -1,0 +1,7 @@
+position,iterations,min_deepest_node,max_deepest_node
+empty_board,50,3,4
+empty_board,200,4,4
+empty_board,1000,6,6
+midgame,50,3,3
+midgame,200,4,5
+midgame,1000,6,6

@@ -1,0 +1,10 @@
+position,iterations,runs,col0,col1,col2,col3,col4,col5,col6,most_common_move,share_of_most_common,distinct_moves
+empty_board,50,30,3,1,1,16,5,2,2,3,0.53,7
+empty_board,200,30,0,1,1,27,1,0,0,3,0.9,4
+empty_board,1000,30,0,0,0,30,0,0,0,3,1.0,1
+midgame,50,30,0,0,26,4,0,0,0,2,0.87,2
+midgame,200,30,0,0,30,0,0,0,0,2,1.0,1
+midgame,1000,30,0,0,30,0,0,0,0,2,1.0,1
+block_in_one,50,30,1,0,3,23,3,0,0,3,0.77,4
+block_in_one,200,30,0,0,0,30,0,0,0,3,1.0,1
+block_in_one,1000,30,0,0,0,30,0,0,0,3,1.0,1

@@ -1,0 +1,8 @@
+XOO.XXX
+XOXOXOO
+OXOOOXO
+OOOXXXO
+XXXOXOX
+XXOXOXO
+to_move: X
+expected: 3

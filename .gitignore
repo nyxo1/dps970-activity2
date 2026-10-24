@@ -2,3 +2,5 @@
 __pycache__/
 .pytest_cache/
 *.zip
+results_quick/
+q1_connect4/results.zip
