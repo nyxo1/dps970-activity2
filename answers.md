@@ -22,7 +22,7 @@ Decision: neither, because the whole is a mixed result
 
 Smoke ⇒ Fire ≡ ¬Smoke ∨ Fire
 
-    ==> ¬Smoke ∨ Fire is false only7 when both parts are false. 
+    ==> ¬Smoke ∨ Fire is false only when both parts are false. 
         This is only true when smoke is true nd fire is false, 
         which matches the row in the table.
 
@@ -62,7 +62,7 @@ Check with equivalence rules (left side, then right side, then compare):
    ≡ ¬Smoke ∨ ¬Heat ∨ Fire              (a ∨ a ≡ a)
 
 
-3. Compare: Both sides become the same reaction: ¬Smoke ∨ ¬Heat ∨ Fire.
+3. Compare: Both sides become the same expression: ¬Smoke ∨ ¬Heat ∨ Fire.
     So, the sentence has the form X ⇔ X, and X ⇔ X is always true.
     This matches the truth table, where the two columns were identical 
     in every row. So the sentence is valid.

@@ -276,6 +276,7 @@ def make_charts():
 
 # ---------------------------------------------------------------------------
 def main():
+    global RESULTS
     parser = argparse.ArgumentParser(description="Connect Four MCTS experiments")
     parser.add_argument("what", choices=["sweeps", "consistency", "noise", "depth", "charts", "all"])
     parser.add_argument("--games", type=int, default=20, help="games per setting and opponent")
@@ -284,6 +285,7 @@ def main():
     args = parser.parse_args()
 
     if args.quick:
+        RESULTS = HERE / "results_quick"   # keep smoke tests away from the real results
         args.games, args.runs = 4, 6
     if args.what in ("sweeps", "all"):
         run_sweeps(args.games, args.quick)

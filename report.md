@@ -71,11 +71,11 @@ In the tables, "sec per move" is the average time per move in the games against 
 
 | Iterations | vs random (W-D-L) | vs baseline (W-D-L) | Win rate vs baseline | Sec per move |
 |---|---|---|---|---|
-| 50 | 20-0-0 | 5-0-15 | 0.25 | 0.0119 |
-| 100 | 20-0-0 | 6-1-13 | 0.325 | 0.0242 |
-| 200 | 20-0-0 | 4-1-15 | 0.225 | 0.0479 |
-| 500 | 20-0-0 | 12-2-6 | 0.65 | 0.135 |
-| 1000 | 20-0-0 | 14-1-5 | 0.725 | 0.2438 |
+| 50 | 20-0-0 | 5-0-15 | 0.25 | 0.0161 |
+| 100 | 20-0-0 | 6-1-13 | 0.325 | 0.031 |
+| 200 | 20-0-0 | 4-1-15 | 0.225 | 0.0598 |
+| 500 | 20-0-0 | 12-2-6 | 0.65 | 0.1455 |
+| 1000 | 20-0-0 | 14-1-5 | 0.725 | 0.2768 |
 
 ![iterations](q1_connect4/results/sweep_iterations.png)
 
@@ -83,11 +83,11 @@ In the tables, "sec per move" is the average time per move in the games against 
 
 | Expand width | vs random (W-D-L) | vs baseline (W-D-L) | Win rate vs baseline | Sec per move |
 |---|---|---|---|---|
-| 1 | 20-0-0 | 6-0-14 | 0.3 | 0.0373 |
-| 2 | 20-0-0 | 4-0-16 | 0.2 | 0.0424 |
-| 3 | 20-0-0 | 4-1-15 | 0.225 | 0.0508 |
-| 5 | 20-0-0 | 11-2-7 | 0.6 | 0.0667 |
-| 7 | 20-0-0 | 11-0-9 | 0.55 | 0.0971 |
+| 1 | 20-0-0 | 6-0-14 | 0.3 | 0.0467 |
+| 2 | 20-0-0 | 4-0-16 | 0.2 | 0.0506 |
+| 3 | 20-0-0 | 4-1-15 | 0.225 | 0.058 |
+| 5 | 20-0-0 | 11-2-7 | 0.6 | 0.0731 |
+| 7 | 20-0-0 | 11-0-9 | 0.55 | 0.1098 |
 
 ![expand width](q1_connect4/results/sweep_expand_width.png)
 
@@ -95,12 +95,12 @@ In the tables, "sec per move" is the average time per move in the games against 
 
 | Max depth | vs random (W-D-L) | vs baseline (W-D-L) | Win rate vs baseline | Sec per move |
 |---|---|---|---|---|
-| 1 | 20-0-0 | 5-1-14 | 0.275 | 0.0105 |
-| 2 | 20-0-0 | 8-1-11 | 0.425 | 0.0135 |
-| 4 | 20-0-0 | 11-0-9 | 0.55 | 0.0521 |
-| 6 | 20-0-0 | 4-1-15 | 0.225 | 0.0507 |
-| 8 | 20-0-0 | 4-1-15 | 0.225 | 0.0528 |
-| 12 | 20-0-0 | 4-1-15 | 0.225 | 0.0554 |
+| 1 | 20-0-0 | 5-1-14 | 0.275 | 0.0127 |
+| 2 | 20-0-0 | 8-1-11 | 0.425 | 0.0175 |
+| 4 | 20-0-0 | 11-0-9 | 0.55 | 0.0588 |
+| 6 | 20-0-0 | 4-1-15 | 0.225 | 0.0581 |
+| 8 | 20-0-0 | 4-1-15 | 0.225 | 0.0587 |
+| 12 | 20-0-0 | 4-1-15 | 0.225 | 0.0594 |
 
 ![max depth](q1_connect4/results/sweep_max_depth.png)
 
@@ -119,20 +119,20 @@ Deepest node reached with no depth cap (`depth.csv`, 5 seeds per row):
 
 | Objective weight | vs random (W-D-L) | vs baseline (W-D-L) | Win rate vs baseline | Sec per move |
 |---|---|---|---|---|
-| 0.0 | 20-0-0 | 8-2-10 | 0.45 | 0.0528 |
-| 0.1 | 20-0-0 | 13-1-6 | 0.675 | 0.0499 |
-| 0.3 | 20-0-0 | 4-1-15 | 0.225 | 0.049 |
-| 0.6 | 20-0-0 | 8-0-12 | 0.4 | 0.0542 |
-| 1.0 | 20-0-0 | 10-0-10 | 0.5 | 0.0512 |
+| 0.0 | 20-0-0 | 8-2-10 | 0.45 | 0.0619 |
+| 0.1 | 20-0-0 | 13-1-6 | 0.675 | 0.0619 |
+| 0.3 | 20-0-0 | 4-1-15 | 0.225 | 0.0596 |
+| 0.6 | 20-0-0 | 8-0-12 | 0.4 | 0.0581 |
+| 1.0 | 20-0-0 | 10-0-10 | 0.5 | 0.0583 |
 
 ![objective weight](q1_connect4/results/sweep_objective_weight.png)
 
 | Exploration C | vs random (W-D-L) | vs baseline (W-D-L) | Win rate vs baseline | Sec per move |
 |---|---|---|---|---|
-| 0.5 | 20-0-0 | 13-0-7 | 0.65 | 0.0459 |
-| 1.0 | 20-0-0 | 7-2-11 | 0.4 | 0.0485 |
-| 1.4 | 20-0-0 | 4-1-15 | 0.225 | 0.0493 |
-| 2.0 | 20-0-0 | 10-0-10 | 0.5 | 0.0483 |
+| 0.5 | 20-0-0 | 13-0-7 | 0.65 | 0.0552 |
+| 1.0 | 20-0-0 | 7-2-11 | 0.4 | 0.0582 |
+| 1.4 | 20-0-0 | 4-1-15 | 0.225 | 0.0624 |
+| 2.0 | 20-0-0 | 10-0-10 | 0.5 | 0.0574 |
 
 ![exploration c](q1_connect4/results/sweep_exploration_c.png)
 
@@ -158,9 +158,9 @@ Counts of the column chosen in 30 searches (seeds 0 to 29):
 
 ## 4. Analysis
 
-**Iterations.** The time per move grows in direct proportion to the iterations: 0.012 s at 50 iterations and 0.244 s at 1000, about 20 times more for 20 times the iterations. Strength against the baseline rose with iterations. The two smallest settings scored 0.25 and 0.325, 500 iterations scored 0.65 and 1000 iterations scored 0.725 (14 wins, 1 draw, 5 losses). The 1000-iteration result is the one clearly above the noise band: if the two players were equal, 14 or more wins out of 19 decisive games would happen about 3% of the time. The 500-iteration result (12 wins, 6 losses) could still be chance, with about a 12% probability. More iterations help because every node's win rate rests on more playouts, so it is less affected by lucky or unlucky random games. The cost is time, and the gain probably flattens out as the estimates get more accurate.
+**Iterations.** The time per move grows roughly in proportion to the iterations: 0.016 s at 50 iterations and 0.277 s at 1000, about 17 times more for 20 times the iterations. Strength against the baseline rose with iterations. The two smallest settings scored 0.25 and 0.325, 500 iterations scored 0.65 and 1000 iterations scored 0.725 (14 wins, 1 draw, 5 losses). The 1000-iteration result is the one clearly above the noise band: if the two players were equal, 14 or more wins out of 19 decisive games would happen about 3% of the time. The 500-iteration result (12 wins, 6 losses) could still be chance, with about a 12% probability. More iterations help because every node's win rate rests on more playouts, so it is less affected by lucky or unlucky random games. The cost is time, and the gain probably flattens out as the estimates get more accurate.
 
-**Expansion width.** Widths 5 and 7 scored 0.6 and 0.55 against the baseline, while widths 1, 2 and 3 scored 0.3, 0.2 and 0.225. The time per move rose from 0.037 s to 0.097 s. Two things change together here. A wider expansion lets each iteration look at more moves, and because every new child gets its own playout it also runs more playouts per iteration, which is the reason it costs more time. So with this design I cannot say how much of the improvement comes from width itself and how much from the extra playouts. With a width of 1 the root only adds one new move per iteration, so early iterations explore very little.
+**Expansion width.** Widths 5 and 7 scored 0.6 and 0.55 against the baseline, while widths 1, 2 and 3 scored 0.3, 0.2 and 0.225. The time per move rose from 0.047 s to 0.110 s. Two things change together here. A wider expansion lets each iteration look at more moves, and because every new child gets its own playout it also runs more playouts per iteration, which is the reason it costs more time. So with this design I cannot say how much of the improvement comes from width itself and how much from the extra playouts. With a width of 1 the root only adds one new move per iteration, so early iterations explore very little.
 
 **Tree height.** A height of 1 (no lookahead below the root) scored 0.275, a height of 2 scored 0.425 and a height of 4 scored 0.55. Heights 6, 8 and 12 gave exactly the same result as the baseline (0.225) and about the same time per move. This is because the tree never gets that deep with 200 iterations: the depth check found the deepest node at depth 3 to 4 with 50 iterations, 4 to 5 with 200 iterations and 6 with 1000 iterations. The cap does nothing when the tree does not reach it. So the height only matters in combination with the number of iterations. A very low height removes the lookahead, so threats a few moves ahead are only seen through random playouts. Whether capping at 4 is better than the baseline's 6 cannot be decided from 20 games.
 
